@@ -1,10 +1,9 @@
-import { Cell } from "../components/Cell";
+import { Board } from "../components/Board";
 
 const HomePage = () => {
   return (
     <div>
-      <Cell />
-      <Cell />
+      <Board rowCount={3} cellCount={2} />
     </div>
   );
 };
