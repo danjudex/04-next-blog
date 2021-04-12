@@ -13,7 +13,7 @@ export const Board: FC<{ rowCount: number; cellCount: number }> = ({
       {Array(rowCount)
         .fill(null)
         .map((_, index) => (
-          <Row key={index} cellCount={cellCount} />
+          <Row key={index} cellCount={cellCount} rowIndex={index} />
         ))}
     </div>
   );

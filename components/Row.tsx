@@ -4,13 +4,16 @@ import { Cell } from "./Cell";
 
 import styles from "./Row.module.css";
 
-export const Row: FC<{ cellCount: number }> = ({ cellCount }) => {
+export const Row: FC<{ cellCount: number; rowIndex: number }> = ({
+  cellCount,
+  rowIndex,
+}) => {
   return (
     <div className={styles.row}>
       {Array(cellCount)
         .fill(null)
-        .map((_, index) => (
-          <Cell key={index} />
+        .map((_, key) => (
+          <Cell {...{ key, colIndex: key, rowIndex }} />
         ))}
     </div>
   );
