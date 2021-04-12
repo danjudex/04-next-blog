@@ -1,9 +1,12 @@
 import { Board } from "../components/Board";
+import { boards } from "../data/boards";
 
 const HomePage = () => {
   return (
     <div>
-      <Board rowCount={3} cellCount={2} />
+      {boards.map((i, index) => {
+        return <Board key={index} {...i} />;
+      })}
     </div>
   );
 };

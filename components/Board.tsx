@@ -9,7 +9,7 @@ export const Board: FC<{ rowCount: number; cellCount: number }> = ({
   cellCount,
 }) => {
   return (
-    <div className={styles.row}>
+    <div className={styles.board}>
       {Array(rowCount)
         .fill(null)
         .map((_, index) => (
