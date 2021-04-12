@@ -1,5 +1,12 @@
+import { Cell } from "../components/Cell";
+
 const HomePage = () => {
-  return <div>Welcome to Next.js!</div>;
+  return (
+    <div>
+      <Cell />
+      <Cell />
+    </div>
+  );
 };
 
 export default HomePage;
