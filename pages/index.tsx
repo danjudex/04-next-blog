@@ -1,4 +1,4 @@
-import { Board } from "../components/Board";
+import { Board } from "../components/board/Board";
 import { boards } from "../data/boards";
 import { DefaultLayout } from "../layouts/DefaultLayout";
 
